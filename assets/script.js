@@ -1,6 +1,25 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+var today = dayjs()
+
+
+
+function displayTime(){
+var date = dayjs().format('dddd, MMMM D');
+$('#date').text(date);
+var time = dayjs().format('hh:mm:ss');
+$('#time').text(time);
+}
+
+
+setInterval(displayTime,1000)
+
+
+
+
+
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
