@@ -1,7 +1,5 @@
 # workday-planner
 
-# coding-quiz
-
 
 
 ## Description
